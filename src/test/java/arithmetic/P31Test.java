@@ -11,13 +11,13 @@ import static org.junit.Assert.assertThat;
 class P31Test {
 
     @Test
-    public void shouldFindPrimeFactorsOf315() throws Exception {
+    public void shouldFindPrimeFactorsOf315() {
         List<SimpleEntry<Integer, Integer>> primeFactors = P31.primeFactorsMult(315);
         assertThat(primeFactors, hasItems(new SimpleEntry<>(3, 2), new SimpleEntry<>(5, 1), new SimpleEntry<>(7, 1)));
     }
 
     @Test
-    public void shouldFindPrimeFactorsOf33() throws Exception {
+    public void shouldFindPrimeFactorsOf33() {
         List<SimpleEntry<Integer, Integer>> primeFactors = P31.primeFactorsMult(33);
         assertThat(primeFactors, hasItems(new SimpleEntry<>(3, 1), new SimpleEntry<>(11, 1)));
     }

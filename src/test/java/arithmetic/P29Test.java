@@ -26,4 +26,9 @@ class P29Test {
     public void firstTenPrimeNumbers(int n) {
         assertTrue(P29.isPrime(n));
     }
+
+    @Test
+    public void smallPrimeNumber() {
+        assertFalse(P29.isPrime(1));
+    }
 }
